@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from VIPMUSIC import app
+from StringGenBot import app
 import httpx 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
