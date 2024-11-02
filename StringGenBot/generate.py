@@ -34,18 +34,18 @@ import config
 
 
 
-ask_ques = "**☞︎︎︎ 𝐂𝐇𝐎𝐎𝐒𝐄 𝐎𝐍𝐄 𝐓𝐇𝐀𝐓 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐎 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𖤍 ✔️ **"
+ask_ques = "**☞︎︎︎ 𝐂𝐇𝐎𝐎𝐒𝐄 𝐎𝐍𝐄 𝐓𝐇𝐀𝐓 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐎 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𖤍  **"
 buttons_ques = [
     [
-        InlineKeyboardButton("❃ᴘʏʀᴏɢʀᴀᴍ❃", callback_data="pyrogram"),
-        InlineKeyboardButton("❃𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐕2❃", callback_data="pyrogram"),
+        InlineKeyboardButton("❃𝐏ʏʀᴏɢʀᴀᴍ❃", callback_data="pyrogram"),
+        InlineKeyboardButton("❃𝐏ʏʀᴏɢʀᴀᴍ  𝐕2❃", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("❃𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍❃", callback_data="telethon"),
+        InlineKeyboardButton("❃𝐓ᴇʟᴇᴛʜᴏɴ❃", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("❃𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐁𝐎𝐓❃", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("❃𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍_𝐁𝐎𝐓❃", callback_data="telethon_bot"),
+        InlineKeyboardButton("❃𝐏ʏʀᴏɢʀᴀᴍ 𝐁ᴏᴛ❃", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("❃𝐓ᴇʟᴇᴛʜᴏɴ_𝐁ᴏᴛ❃", callback_data="telethon_bot"),
     ],
 ]
 
@@ -93,7 +93,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     if not is_bot:
         t = "☞︎︎︎ » ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ : \nᴇxᴀᴍᴘʟᴇ : `+91 95xxxxxxXX`'"
     else:
-        t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `6810174902:AAGQVElsBPTNe6Rj16miPbCrDGikscfarYY`'"
+        t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `6810174902:AAGQVElsBPTNe6hki6miPbCrDGikscfarYY`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
     if await cancelled(phone_number_msg):
         return
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[🂱ᴅᴀ፝֟ʀᴋ↯ຶ𓆈PʏᎢʜᝪɴᯓᡣ𐭩](https://t.me/STRING_BABYGEN_BOT) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
+    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[●⃝🐼🇷ishu࿐♡](https://t.me/RishuStringBot) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -183,7 +183,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ [🂱ᴅᴀ፝֟ʀᴋ↯ຶ𓆈PʏᎢʜᝪɴᯓᡣ𐭩](https://t.me/uttam470)".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
+    await bot.send_message(msg.chat.id, "sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʏᴏᴜʀ {} sᴛʀɪɴɢ sᴇssɪᴏɴ.\n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ғᴏʀ ɢᴇᴛᴛɪɴɢ ɪᴛ.\n\nᴀ sᴛʀɪɴɢ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ ʙʏ [●⃝🐼🇷ishu࿐♡](https://t.me/Rishu1286)".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴩʏʀᴏɢʀᴀᴍ"))
 
 
 async def cancelled(msg):
